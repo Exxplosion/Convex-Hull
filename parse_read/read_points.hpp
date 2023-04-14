@@ -17,7 +17,7 @@ enum class ReadErrors
     PARSING_FILE_ERROR = -102,
     PARSING_FILE_PROCESS_ERROR = -105,
     FILE_HAVE_ODD_COUNTS_POINTS = -103,
-    SUCCSES = 0
+    SUCCESS = 0
 };
 
 ReadErrors check_file(const std::string &filename,  uint32_t &n);

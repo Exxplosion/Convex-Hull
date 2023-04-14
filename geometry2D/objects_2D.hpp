@@ -1,6 +1,8 @@
 #pragma once
 #include "consts.hpp"
 #include <iostream>
+#include<vector>
+#include<cmath>
 
 class Point
 {
@@ -87,7 +89,7 @@ public:
 
     void print() const
     {
-        std::cout << "np.array([" << std::endl;
+        std::cout << "([" << std::endl;
         for (const Point& p : (*points))
         {
             std::cout << "[" << p.x << "," << p.y << "]," << std::endl;

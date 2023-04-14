@@ -4,7 +4,7 @@
 {
     if (argc < 3)
     {
-        return ParseErrors::INSUFFICIENT_ARGMENTS;
+        return ParseErrors::INSUFFICIENT_ARGUMENTS;
     }
     if (argc > 3)
     {
@@ -20,7 +20,7 @@ std::string get_error_name(ParseErrors err_info)
 {
     switch (err_info)
     {
-    case ParseErrors::INSUFFICIENT_ARGMENTS:
+    case ParseErrors::INSUFFICIENT_ARGUMENTS:
         return "Not enough arguments";
     case ParseErrors::TO_MUCH_ARGUMENTS:
         return "To much arguments";

@@ -25,7 +25,7 @@ ReadErrors read_points(const std::string &filename, const uint32_t& count_points
 
     file.close();
 
-    return ReadErrors::SUCCSES;
+    return ReadErrors::SUCCESS;
 };
 
 [[nodiscard]] ReadErrors check_file(const std::string &filename, uint32_t &n)
@@ -57,7 +57,7 @@ ReadErrors read_points(const std::string &filename, const uint32_t& count_points
     }
     fclose(fileptr);
 
-    return ReadErrors::SUCCSES;
+    return ReadErrors::SUCCESS;
 };
 
 std::string get_error_name(ReadErrors err_info)
@@ -72,7 +72,7 @@ std::string get_error_name(ReadErrors err_info)
         return "File have odd counts points";
     case ReadErrors::PARSING_FILE_PROCESS_ERROR:
         return "Fail parsing file in reading";
-    case ReadErrors::SUCCSES:
+    case ReadErrors::SUCCESS:
         return "No error";
     default:
         return "Uknown error";

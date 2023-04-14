@@ -79,7 +79,6 @@ int main(int argc, char** argv)
     delete B_points;
 
     GJK aux(A, B);
-    Point tmp(0, -1);
 
     if (aux.check_intersection())
     {

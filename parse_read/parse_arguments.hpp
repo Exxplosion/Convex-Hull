@@ -4,7 +4,7 @@
 
 enum class ParseErrors
 {
-    INSUFFICIENT_ARGMENTS = -3,
+    INSUFFICIENT_ARGUMENTS = -3,
     TO_MUCH_ARGUMENTS = -200,
     NOT_A_NUMBER = -100,
     SUCCESS = 0
