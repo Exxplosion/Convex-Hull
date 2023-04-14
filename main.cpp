@@ -90,5 +90,8 @@ int main(int argc, char** argv)
         std::cout << "NO" << std::endl;
     }
 
+    delete A.points;
+    delete B.points;
+
     return 0;
 }
